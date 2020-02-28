@@ -1,16 +1,16 @@
 @font-face {
 	font-family: Lato-Black;
-	src: url('./assets/fonts\ singolo2/Lato/Lato-Black.ttf');
+	src: url('./assets/fonts-singolo2/Lato/Lato-Black.ttf');
 }
 
 @font-face {
 	font-family: Lato-Light;
-	src: url('./assets/fonts\ singolo2/Lato/Lato-Light.ttf');
+	src: url('./assets/fonts-singolo2/Lato/Lato-Light.ttf');
 }
 
 @font-face {
 	font-family: Lato-Regular;
-	src: url('./assets/fonts\ singolo2/Lato/Lato-Regular.ttf');
+	src: url('./assets/fonts-singolo2/Lato/Lato-Regular.ttf');
 }
 
 
@@ -35,7 +35,7 @@ body {
 
 .headerPortfolioText h1 {
 	color: #666d89;
-	margin-top: 0px;
+	margin-top: 2px;
 	font-weight: bolder;
 	font-size: 29.5px;
 	font-family: Lato-Black;
@@ -54,6 +54,7 @@ body {
 	font-size: 17.5px;
 	padding-top: 2px;
 	font-family: Lato-Light;
+	word-spacing: 0, 8px;
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -99,31 +100,38 @@ body {
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .work {
+	overflow: hidden;
 	display: flex;
 	background: #2d303a;
 	max-width: 1020px;
-	height: 684px;
+	height: 625px;
+}
+
+.itemBottom {
+	background: #2d303a;
+	width: 100%;
+	height: 61px;
 }
 
 .work .section1 {
-	margin-top: 16px;
+	margin-top: 18px;
 	margin-left: 40px;
 }
 
 .work .section2 {
-	margin-top: 16px;
+	margin-top: 18px;
 	padding-left: 5px;
 
 }
 
 .work .section3 {
-	margin-top: 16px;
+	margin-top: 18px;
 	margin-right: 6px;
 	padding-left: 5px;
 }
 
 .work .section4 {
-	margin-top: 16px;
+	margin-top: 18px;
 	margin-right: 25px;
 }
 
@@ -138,7 +146,7 @@ body {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .aboutUs {
-	padding: 34px 1px 1px 39px;
+	padding: 33px 1px 1px 39px;
 }
 
 .aboutUs h2 {
@@ -165,47 +173,142 @@ body {
 	font-family: Lato-Light;
 	line-height: 29px;
 }
-.aboutUs .p2 span{
+
+.aboutUs .p2 span {
 	padding-left: 3px;
 	/* word-spacing: 1.4px; */
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.we {
+	background: #f2f2f2;
+	min-height: 730px;
+}
+
 .vc {
 	display: flex;
 	margin-top: 26px;
 	margin-left: 40px;
 }
- .itemMid .photo{
- padding-left: 18px;
-} 
-.itemRight .photo{
+
+.itemMid .photo {
+	padding-left: 18px;
+}
+
+.itemRight .photo {
 	padding-left: 21px;
 }
-.itemLeft h2{
+
+.itemLeft h2 {
+	max-width: 150px;
+	white-space: nowrap;
 	color: #666d89;
 	font-family: Lato-Black;
 	font-size: 18px;
 	margin-top: 10px;
 	margin-left: -1px;
 }
-.itemLeft .pTop{
+
+.itemLeft .pTop {
 	color: #767e9e;
 	font-family: Lato-Regular;
 	font-size: 12px;
-    margin-left: -1px;
-    margin-top: -4px;
-    word-spacing: -0.2px;
-}
-.itemLeft p span{
- margin-left: -1.6px;
-}
-.itemLeft .pBottan{
-	color: #767e9e;
-	font-family: Lato-Regular;
-	font-size: 12px;
-    margin-left: -1px;
-    margin-top: -6px;
-    word-spacing: -0.2px;
+	margin-left: -1px;
+	margin-top: -4px;
+	word-spacing: -0.2px;
 }
 
+.itemLeft p span {
+	margin-left: -1.6px;
+}
+
+.itemLeft .pBottom {
+	color: #767e9e;
+	font-family: Lato-Regular;
+	font-size: 12px;
+	margin-left: -1px;
+	margin-top: -6px;
+	word-spacing: -0.2px;
+}
+
+.itemMid h2 {
+	max-width: 150px;
+	white-space: nowrap;
+	color: #666d89;
+	font-family: Lato-Black;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 18px;
+}
+
+.itemMid .pTop {
+	color: #767e9e;
+	font-family: Lato-Regular;
+	font-size: 12px;
+	margin-left: 18px;
+	margin-top: -4px;
+	word-spacing: -0.2px;
+}
+
+.itemMid .pBottom {
+	color: #767e9e;
+	font-family: Lato-Regular;
+	font-size: 12px;
+	margin-left: 18px;
+	margin-top: -6px;
+	word-spacing: -0.2px;
+}
+
+.itemRight h2 {
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #666d89;
+	font-family: Lato-Black;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 19px;
+}
+
+.itemRight .pTop {
+	color: #767e9e;
+	font-family: Lato-Regular;
+	font-size: 12px;
+	margin-left: 21px;
+	margin-top: -4px;
+	word-spacing: -0.2px;
+}
+
+.itemRight .pBottom {
+	color: #767e9e;
+	font-family: Lato-Regular;
+	font-size: 12px;
+	margin-left: 21px;
+	margin-top: -6px;
+	word-spacing: -0.2px;
+}
+
+.itemLeft .social {
+	margin-top: 15px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+
+.container {
+	margin-top: 27px;
+	margin-left: 19px;
+}
+
+.container .social {
+	padding-left: 3px;
+	cursor: pointer;
+}
+
+.container {
+	margin-top: 27px;
+	margin-left: 19px;
+}
+
+.bottomBorder {
+	border: 3px solid #ffffff;
+}
