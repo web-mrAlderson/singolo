@@ -1,3 +1,20 @@
+@font-face {
+	font-family: Lato-Black;
+	src: url('./assets/fonts-singolo2/Lato/Lato-Black.ttf');
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url('./assets/fonts-singolo2/Lato/Lato-Light.ttf');
+}
+
+@font-face {
+	font-family: Lato-Regular;
+	src: url('./assets/fonts-singolo2/Lato/Lato-Regular.ttf');
+}
+
+
+
 body {
 	margin: 0 auto;
 	padding: 0px;
@@ -14,12 +31,12 @@ body {
 }
 
 .logo {
+	font-family: Lato-Black;
 	display: flex;
 	color: white;
 	margin: 0px;
 	text-transform: uppercase;
 	font-size: 24.4902px;
-	font-family: 'Lato', sans-serif;
 	padding-left: 40px;
 	padding-bottom: 2px;
 	font-style: normal;
@@ -27,13 +44,11 @@ body {
 }
 
 .logo h1 {
-
 	width: 155.41px;
 	height: 20px;
 	left: 42px;
 	top: 41.74px;
 	padding-top: 15px;
-	font-family: Lato;
 	font-size: 24.2902px;
 	line-height: 6px;
 }
@@ -43,12 +58,12 @@ body {
 }
 
 .nav {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Lato-Regular;
 	text-align: justify;
 	display: flex;
 	text-transform: uppercase;
 	font-size: 11.6593px;
-	padding-right: 40px;
+	padding-right: 36px;
 	line-height: 7px;
 }
 
@@ -63,14 +78,16 @@ body {
 .nav li span {
 	color: #ffffff;
 }
-.nav li:hover{
-	color: red;
-	cursor: pointer;
-}
+
 
 li:first-child {
 	list-style-type: none;
-	color: #EB5055;
+	color: red;
+	cursor: pointer;
+}
+.nav li span:hover{
+	color: red;
+	cursor: pointer;
 }
 
 .borderTop {
@@ -131,20 +148,21 @@ li:first-child {
 }
 
 .services h2 {
+	font-family: Lato-Black;
 	padding-top: 25px;
 	margin: 0px auto;
 	font-size: 29.6188px;
-	font-family: 'Lato', sans-serif;
 	color: #767E9E;
 }
 
 .services p {
 	margin: 0px auto;
-	padding-top: 19px;
-	font-family: 'Lato', sans-serif;
+	padding-top: 18px;
+	font-family: Lato-Light;
 	font-size: 17.5px;
 	color: #767E9E;
 	line-height: 30px;
+	word-spacing: 3.5px;
 }
 
 
@@ -170,21 +188,23 @@ li:first-child {
 
 .itemAdvantage h3 {
 	letter-spacing: 0em;
-	font-family: 'Lato', sans-serif;
+	font-family: Lato-Black;
 	margin: 0 auto;
 	font-size: 17.7713px;
 	color: #666D89;
-	padding-left: 22px;
+	padding-left: 21px;
+	padding-top: 1px;
 }
 
 .itemAdvantage p {
-	font-family: 'Lato', sans-serif;
+	font-family: Lato-Regular;
 	margin: 0px auto;
 	color: #767E9E;
 	font-size: 12px;
 	line-height: 22px;
 	padding-top: 9px;
-	padding-left: 20px;
+	padding-left: 21px;
+	word-spacing: 6px;
 }
 
 .itemLeft {
@@ -203,16 +223,8 @@ li:first-child {
 }
 
 .itemAdvantage img {
-	padding-top: 4px;
+	padding-top: 5px;
 	padding-bottom: 58.5px;
 	width: 59px;
 	height: 59px;
-}
-@font-face{
-	font-family: "Lato";
-	src: url("/assets/fonts/Lato/Lato-Black.ttf") format("ttf")
-}
-@font-face{
-	font-family: "Lato";
-	src: url("/assets/fonts/Open_Sans/OpenSans-Bold.ttf") format("ttf")
 }

@@ -27,7 +27,7 @@ body {
 }
 
 .headerPortfolioText {
-	padding-top: 61px;
+	padding-top: 59px;
 	font-family: 'Lato';
 
 	margin-left: 39.5px;
@@ -104,7 +104,7 @@ body {
 	display: flex;
 	background: #2d303a;
 	max-width: 1020px;
-	height: 625px;
+	height: 623px;
 }
 
 .itemBottom {
@@ -114,24 +114,24 @@ body {
 }
 
 .work .section1 {
-	margin-top: 18px;
+	margin-top: 16px;
 	margin-left: 40px;
 }
 
 .work .section2 {
-	margin-top: 18px;
+	margin-top: 16px;
 	padding-left: 5px;
 
 }
 
 .work .section3 {
-	margin-top: 18px;
+	margin-top: 16px;
 	margin-right: 6px;
 	padding-left: 5px;
 }
 
 .work .section4 {
-	margin-top: 18px;
+	margin-top: 16px;
 	margin-right: 25px;
 }
 
