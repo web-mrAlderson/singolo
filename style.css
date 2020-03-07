@@ -44,6 +44,7 @@ body {
 }
 
 .logo h1 {
+	font-family: Lato-Black;
 	width: 155.41px;
 	height: 20px;
 	left: 42px;
@@ -503,7 +504,7 @@ li:first-child {
 
 .work .section2 {
 	margin-top: 15px;
-	padding-left: 5px;
+	padding-left: 6px;
 
 }
 
@@ -583,7 +584,8 @@ li:first-child {
 }
 
 .itemLeft1 h2 {
-	max-width: 150px;
+	overflow: hidden;
+	max-width: 300px;
 	white-space: nowrap;
 	color: #666d89;
 	font-family: Lato-Black;
@@ -615,7 +617,8 @@ li:first-child {
 }
 
 .itemMid2 h2 {
-	max-width: 150px;
+	overflow: hidden;
+	max-width: 300px;
 	white-space: nowrap;
 	color: #666d89;
 	font-family: Lato-Black;
@@ -643,7 +646,8 @@ li:first-child {
 }
 
 .itemRight3 h2 {
-	max-width: 150px;
+	overflow: hidden;
+	max-width: 300px;
 	white-space: nowrap;
 	overflow: hidden;
 	color: #666d89;
