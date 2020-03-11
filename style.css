@@ -498,25 +498,28 @@ li:first-child {
 }
 
 .work .section1 {
+	max-width: 250px;
 	margin-top: 15px;
 	margin-left: 40px;
 }
 
 .work .section2 {
+	max-width: 250px;
 	margin-top: 15px;
 	padding-left: 6px;
-
 }
 
 .work .section3 {
+	max-width: 250px;
 	margin-top: 15px;
 	margin-right: 6px;
 	padding-left: 5px;
 }
 
 .work .section4 {
+	max-width: 230px;
 	margin-top: 15px;
-	margin-right: 25px;
+	margin-right: 39px;
 }
 
 .itemWork {
