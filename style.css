@@ -58,6 +58,10 @@ body {
 	color: #F06C64;
 }
 
+.logo span {
+	color: #2d303a;
+}
+
 .nav {
 	font-family: Lato-Regular;
 	text-align: justify;
@@ -69,27 +73,33 @@ body {
 }
 
 .nav li {
+	list-style-type: none;
 	padding-right: 1.5px;
-	color: #494E62;
 	font-weight: bold;
 	padding-top: 10px;
 	padding-left: 11px;
 }
 
-.nav li span {
+.nav li a {
 	color: #ffffff;
+	text-decoration: none;
+}
+
+.nav li span {
+	cursor: pointer;
+	color: #494E62;
+	padding-right: 14px;
 }
 
 
-li:first-child {
-	list-style-type: none;
+
+.nav li a:hover {
 	color: red;
 	cursor: pointer;
 }
 
-.nav li span:hover {
+.nav .active {
 	color: red;
-	cursor: pointer;
 }
 
 .borderTop {
@@ -104,42 +114,112 @@ li:first-child {
 	border-bottom: 6px solid #ffffff;
 }
 
-.slider {
+/* /////////////////////////////////////////////////////////////// */
+.wrapper {
+	position: relative;
 	display: flex;
 	width: 100%;
 	height: 594px;
 	background: #f06c64;
 }
 
-.clik {
-	padding-left: 43px;
-	padding-top: 280px;
-	width: 16px;
-	height: 28px;
+.sliders {
+	display: flex;
+	width: 100%;
+	height: 594px;
+	position: absolute;
 }
 
-.clik:hover {
+.sliders-item {
+	width: 100%;
+	height: 100%;
+	/* z-index: 1; */
+}
+
+#left-button,
+#right-button {
 	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.clikR {
-	padding-left: 55px;
+#elem {
+	display: none;
+	background: #2d303a;
+	position: absolute;
+	z-index: 1;
+	width: 188px;
+	height: 333px;
+	margin-top: 118px;
+	margin-left: 126px;
 }
 
-.clikR:hover {
+#click {
 	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	width: 188px;
+	height: 333px;
+	margin-top: 118px;
+	margin-left: 126px;
+}
+
+#click1 {
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	width: 333px;
+	height: 188px;
+	margin-top: 188px;
+	margin-left: 485px;
+}
+
+#elem1 {
+	display: none;
+	background: #2d303a;
+	position: absolute;
+	z-index: 1;
+	width: 333px;
+	height: 188px;
+	margin-top: 188px;
+	margin-left: 485px;
+}
+
+#left-button img,
+#right-button img {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#left-button {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	left: 41px;
+}
+
+#right-button {
+	cursor: pointer;
+	right: 56px;
 }
 
 .iPhone1 {
+	height: 483px;
+	width: 240px;
 	padding-top: 53px;
-	padding-left: 53px;
+	padding-left: 112px;
 }
 
 .iPhone2 {
-	padding-left: 69px;
-	padding-bottom: 122px;
+	height: 240px;
+	width: 484px;
+	padding: 174px 0px 122px 69px;
 }
 
+/* ///////////////////////////////////////////////////// */
 .servicesAdvantage {
 	height: 494px;
 	background: #F2F2F2;
@@ -356,13 +436,17 @@ li:first-child {
 	border: 1px solid #666d89;
 	text-decoration: none;
 	color: #666d89;
+	cursor: pointer;
 }
 
 .navheader a:hover {
 	border: 1px solid #ffffff;
 	color: #ffffff;
 }
-
+.navheader .active2{
+	border: 1px solid #ffffff;
+	color: #ffffff;
+}
 .navheader .item1 {
 	border-radius: 5px;
 	padding: 2px 6px 3px 7px;
@@ -386,7 +470,6 @@ li:first-child {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .work {
 	overflow: hidden;
-	display: flex;
 	background: #2d303a;
 	max-width: 1020px;
 	height: 622px;
@@ -398,33 +481,18 @@ li:first-child {
 	height: 61px;
 }
 
-.work .section1 {
-	max-width: 250px;
+.work .layout-4-column{
+	max-width: 940px;
 	margin-top: 15px;
 	margin-left: 40px;
-}
-
-.work .section2 {
-	max-width: 250px;
-	margin-top: 15px;
-	padding-left: 6px;
-}
-
-.work .section3 {
-	max-width: 250px;
-	margin-top: 15px;
-	margin-right: 6px;
-	padding-left: 5px;
-}
-
-.work .section4 {
-	max-width: 230px;
-	margin-top: 15px;
-	margin-right: 39px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .itemWork {
-	padding-top: 15px;
+	margin-bottom: 20px;
+	border-style: none;
 }
 
 .midBorder {
@@ -478,17 +546,21 @@ li:first-child {
 	margin-top: 26px;
 	margin-left: 40px;
 }
+
 .itemLeft1 {
 	max-width: 304px;
 	margin-right: -3px;
 }
-.itemMid2  {
+
+.itemMid2 {
 	max-width: 311px;
 	margin-right: 7px;
 }
+
 .itemRight3 {
 	max-width: 313px;
 }
+
 .itemMid2 .photo {
 	padding-left: 18px;
 }
