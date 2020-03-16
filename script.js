@@ -1,19 +1,22 @@
-let NAV = document.getElementById('nav'),
-	SLIDES  		= document.getElementsByClassName('sliders-item'),
-	navheader		= document.getElementById('navheader'),
-	layout4			= document.getElementById('layout4'),
+let NAV 			= document.getElementById('nav'),
+	SLIDES 			= document.getElementsByClassName('sliders-item'),
+	navheader 		= document.getElementById('navheader'),
+	layout4 		= document.getElementById('layout4'),
 	prevBtn 		= document.getElementById('left-button'),
 	nextBtn 		= document.getElementById('right-button'),
 	iPhone2 		= document.getElementById('iPhone2'),
-	click			= document.getElementById('click'),
-	click1			= document.getElementById('click1'),
-	navItemWork		= document.getElementById('navItemWork'),
-	navItemWork2	= document.getElementById('navItemWork2'),
-	navItemWork3	= document.getElementById('navItemWork3'),
-	navItemWork4	= document.getElementById('navItemWork4'),
-	button			= document.getElementById('btn'),
-	closeButton		= document.getElementById('closeBtn'),
-	clickPortfolio	= document.getElementById('portfolioImge'),
+	click 			= document.getElementById('click'),
+	click1 			= document.getElementById('click1'),
+	navItemWork	 	= document.getElementById('navItemWork'),
+	navItemWork2 	= document.getElementById('navItemWork2'),
+	navItemWork3 	= document.getElementById('navItemWork3'),
+	navItemWork4 	= document.getElementById('navItemWork4'),
+	button 			= document.getElementById('btn'),
+	closeButton 	= document.getElementById('closeBtn'),
+	clickPortfolio 	= document.getElementById('portfolioImge'),
+	elem 			= document.getElementById("elem"),
+	elem1 			= document.getElementById("elem1"),
+	elems 			= Array.from(layout4.getElementsByTagName('*')),
 	slideIndex 		= 1;
 
 
@@ -29,23 +32,30 @@ layout4.addEventListener('click', (event) => {
 navheader.addEventListener('click', (event) => {
 	navheader.querySelectorAll('a').forEach(el => el.classList.remove('active2'));
 	event.target.classList.add('active2');
+	
 });
 button.addEventListener('click', (e) => {
 	let subject 	= document.getElementById('subject').value.toString();
 	let description = document.querySelector('textarea').value.toString();
 	let name 		= document.getElementById('name').value.toString();
-	let mail		= document.getElementById('email').value.toString();
-	if(mail.length == 0){
+	let mail 		= document.getElementById('email').value.toString();
+	if (mail.length == 0) {
 		return;
 	}
-	if(name.length == 0){
+	if (name.length == 0) {
 		return;
 	}
-	if(subject.length == 0){
+	if (subject.length == 0) {
 		subject = "Без темы";
 	}
-	if(description.length == ""){
-		description = "Без описания"; 
+	else if (subject.length > 10) {
+		subject = "";
+	}
+	if (description.length == "") {
+		description = "Без описания";
+	}
+	else if (description.length > 10) {
+		description = "";
 	}
 	document.getElementById('result').innerText = subject;
 	document.getElementById('descript').innerText = description;
@@ -94,7 +104,20 @@ function FuncImages2() {
 	document.getElementById("elem1").style.display = "block";
 	document.getElementById("click1").style.display = "none";
 }
-
+function off() {
+		document.getElementById("elem").style.display = "none";
+		document.getElementById("click").style.display = "block";
+}
+function off1() {
+	document.getElementById("elem1").style.display = "none";
+	document.getElementById("click1").style.display = "block";
+}
+elem.onclick = function () {
+	off()
+}
+elem1.onclick = function () {
+	off1()
+}
 click.onclick = function () {
 	FuncImages();
 }
@@ -102,31 +125,31 @@ click1.onclick = function () {
 	FuncImages2();
 }
 
-let elems = Array.from(layout4.getElementsByTagName('*'))
+// Portfolio items
 function shuffle(elems) {
-	let currentIndex = elems.length; 
+	let currentIndex = elems.length;
 	let randomIndex;
 	let temporaryValue;
 	while (0 !== currentIndex) {
-  
-	  randomIndex = Math.floor(Math.random() * currentIndex);
-	  currentIndex -= 1;
-  
-	  temporaryValue = elems[currentIndex];
-	  elems[currentIndex] = elems[randomIndex];
-	  elems[randomIndex] = temporaryValue;
+
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+
+		temporaryValue = elems[currentIndex];
+		elems[currentIndex] = elems[randomIndex];
+		elems[randomIndex] = temporaryValue;
 	}
-	for(let i = 0; i < elems.length; i++)
+	for (let i = 0; i < elems.length; i++)
 		layout4.append(elems[i]);
-  	}
-  function removeChildren(layout4) {
-		var children = layout4.childNodes
-		while(children.length) {
-			layout4.removeChild(children[0])
-		}
+}
+function removeChildren(layout4) {
+	var children = layout4.childNodes
+	while (children.length) {
+		layout4.removeChild(children[0])
 	}
-	
-  navItemWork.onclick = function () {
+}
+
+navItemWork.onclick = function () {
 	removeChildren(layout4);
 	shuffle(elems);
 }
