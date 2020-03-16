@@ -11,16 +11,50 @@ let NAV = document.getElementById('nav'),
 	navItemWork2	= document.getElementById('navItemWork2'),
 	navItemWork3	= document.getElementById('navItemWork3'),
 	navItemWork4	= document.getElementById('navItemWork4'),
+	button			= document.getElementById('btn'),
+	closeButton		= document.getElementById('closeBtn'),
+	clickPortfolio	= document.getElementById('portfolioImge'),
 	slideIndex 		= 1;
+
 
 
 NAV.addEventListener('click', (event) => {
 	NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
 	event.target.classList.add('active');
 });
+layout4.addEventListener('click', (event) => {
+	layout4.querySelectorAll('img').forEach(el => el.classList.remove('itemActive'));
+	event.target.classList.add('itemActive');
+});
 navheader.addEventListener('click', (event) => {
 	navheader.querySelectorAll('a').forEach(el => el.classList.remove('active2'));
 	event.target.classList.add('active2');
+});
+button.addEventListener('click', (e) => {
+	let subject 	= document.getElementById('subject').value.toString();
+	let description = document.querySelector('textarea').value.toString();
+	let name 		= document.getElementById('name').value.toString();
+	let mail		= document.getElementById('email').value.toString();
+	if(mail.length == 0){
+		return;
+	}
+	if(name.length == 0){
+		return;
+	}
+	if(subject.length == 0){
+		subject = "Без темы";
+	}
+	if(description.length == ""){
+		description = "Без описания"; 
+	}
+	document.getElementById('result').innerText = subject;
+	document.getElementById('descript').innerText = description;
+	document.getElementById('message-block').classList.remove('hidden');
+	e.preventDefault();
+});
+closeButton.addEventListener('click', () => {
+	document.getElementById('result').innerText = '';
+	document.getElementById('message-block').classList.add('hidden');
 });
 
 

@@ -491,10 +491,13 @@ body {
 }
 
 .itemWork {
+	cursor: pointer;
 	margin-bottom: 20px;
 	border-style: none;
 }
-
+.itemActive{
+border: 5px solid #F06C64;
+}
 .midBorder {
 	border: 3px solid #323746;
 }
@@ -741,6 +744,40 @@ textarea[type="text"]::placeholder {
 	cursor: pointer;
 	outline: none;
 	color: #f0d8d9;
+}
+#message-block{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #d6564f71;
+}
+#message-block.hidden{
+	display: none;
+}
+#message1{
+	background: #d3180ea8;
+	padding: 20px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 2px solid black;
+	text-align: center;
+}
+#close-btn{
+	border: 1px solid #ad433e;
+	background-color: #d6564f;
+	cursor: pointer;
+	outline: none;
+	color: #f0d8d9;
+}
+#message1 p {
+	color: black;
+	margin: 0px;
+	word-spacing: 0px;
 }
 
 /* ///////////////////////////////////////// */
