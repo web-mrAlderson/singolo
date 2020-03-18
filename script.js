@@ -17,14 +17,35 @@ let NAV 			= document.getElementById('nav'),
 	elem 			= document.getElementById("elem"),
 	elem1 			= document.getElementById("elem1"),
 	elems 			= Array.from(layout4.getElementsByTagName('*')),
+	divs  			= document.querySelectorAll('#wrap > div'),
+	links 			= document.querySelectorAll('#nav a'),
+	curPos 			= window.scrollY,
+	subject 		= document.getElementById('subject').value.toString(),
+	description 	= document.querySelector('textarea').value.toString(),
+	name 			= document.getElementById('name').value.toString(),
+	mail 			= document.getElementById('email').value.toString(),
 	slideIndex 		= 1;
 
+	document.addEventListener('scroll', onScroll);
 
-
+function onScroll(event){
+	divs.forEach((el) => {
+		if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
+			links.forEach((a) =>{
+				a.classList.remove('active');
+				if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+					a.classList.add('active');
+				}
+			})
+		}
+	});
+}
 NAV.addEventListener('click', (event) => {
 	NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
 	event.target.classList.add('active');
 });
+
+
 layout4.addEventListener('click', (event) => {
 	layout4.querySelectorAll('img').forEach(el => el.classList.remove('itemActive'));
 	event.target.classList.add('itemActive');
