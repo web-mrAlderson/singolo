@@ -22,19 +22,47 @@ let NAV 			= document.getElementById('nav'),
 	document.addEventListener('scroll', onScroll);
 
 function onScroll(event){
-	let curPos = window.scrollY;
-		divs  = document.querySelectorAll('#wrap > div'),
-	    links = document.querySelectorAll('#nav a');
-	divs.forEach((el) => {
-		if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
-			links.forEach((a) =>{
-				a.classList.remove('active');
-				if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
-					a.classList.add('active');
-				}
-			})
-		}
-	});
+	console.log(pageYOffset);
+	if (pageYOffset < 602 ){
+		navHeader = document.getElementById('sclrollHeaderLink');
+		NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+		navHeader.classList.add('active');
+	}
+	else if (pageYOffset > 602 && pageYOffset < 1103){
+		navServices = document.getElementById('sclrollServicesLink');
+		NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+		navServices.classList.add('active');
+	}
+	else if (pageYOffset > 1103 && pageYOffset < 1975){
+		navPortfolio = document.getElementById('sclrollPortfolioLink');
+		NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+		navPortfolio.classList.add('active');
+	}
+	else if (pageYOffset > 1975 && pageYOffset < 2707){
+		navAbout = document.getElementById('sclrollAboutLink');
+		NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+		navAbout.classList.add('active');
+	}
+	else if (pageYOffset > 2707){
+		navContact = document.getElementById('sclrollContactLink');
+		NAV.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+		navContact.classList.add('active');
+	}
+
+	// console.log(pageYOffset);
+	// let curPos = window.scrollY;
+	// 	divs  = document.querySelectorAll('#wrap > div'),
+	//     links = document.querySelectorAll('#nav a');
+	// divs.forEach((el) => {
+	// 	if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
+	// 		links.forEach((a) =>{
+	// 			a.classList.remove('active');
+	// 			if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+	// 				a.classList.add('active');
+	// 			}
+	// 		})
+	// 	}
+	// });
 }
 
 NAV.addEventListener('click', (event) => {
