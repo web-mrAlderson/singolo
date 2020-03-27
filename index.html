@@ -9,165 +9,186 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="logo">
-			<h1>
-				Singolo<span>*</span>
-			</h1>
-			<span>&#9773;</span>
+	<header class="header" id="header">
+		<div class="wrapper header__wrapper">
+			<div class="border__menu">
+				<img src="./assets/img-singolo3/Burger-menu-icon.png" alt="">
+			</div>
+			<div class="logo">
+				<h1>
+					Singolo<span>*</span>
+				</h1>
+				<span>&#9773;</span>
+			</div>
+			<menu class="nav" id="nav">
+				<li><a class="active" id="sclrollHeaderLink" href="#header">home</a></li>
+				<li><span>&middot;</span><a id="sclrollServicesLink" href="#services">services</a></li>
+				<li><span>&middot;</span><a id="sclrollPortfolioLink" href="#portfolio">portfolio</a></li>
+				<li><span>&middot;</span><a id="sclrollAboutLink" href="#about">about</a></li>
+				<li><span>&middot;</span><a id="sclrollContactLink" href="#contact">contact</a></li>
+			</menu>
 		</div>
-		<menu class="nav" id="nav">
-			<li><a class="active" id="sclrollHeaderLink" href="#header">home</a></li>
-			<li><span>&middot;</span><a id="sclrollServicesLink" href="#services">services</a></li>
-			<li><span>&middot;</span><a id="sclrollPortfolioLink" href="#portfolio">portfolio</a></li>
-			<li><span>&middot;</span><a id="sclrollAboutLink" href="#about">about</a></li>
-			<li><span>&middot;</span><a id="sclrollContactLink" href="#contact">contact</a></li>
-		</menu>
 	</header>
-	<section class="t" id="wrap">
-		<div class="borderTop" id="header"></div>
+	<section class="t">
 	</section>
-
-	<div class="borderTop"></div>
-	<section>
-		<div class="wrapper">
-		<div class="sliders">
-			<div></div>
-			<div class="sliders-item">
-				<div id="click"></div>
-				<div id="elem"></div>
-				<div id="click1"></div>
-				<div id="elem1"></div>
-				<img src="./assets/img/iPhone Vertical.png" alt="iPhone" class="iPhone1">
-				<img src="./assets/img/iPhone Horizontal.png" alt="iPhone2" id="iPhone2" class="iPhone2 ">
-			</div>
-			<div class="sliders-item">
-				<img src="./assets/img/Slide-2.png" alt="#">
-			</div>
-		</div>
-		<div id="left-button"><img src="./assets/img/chevLeft.png" alt=""></div>
-		<div id="right-button"><img src="./assets/img/chev.png" alt=""></div>
+	<div class="wrapper">
+		<div class="borderTop"></div>
 	</div>
-	<div class="linkServices"></div>
+	<section>
+		<div class="wrapper wrapper__sliders">
+			<div class="sliders">
+				<div id="left-button"><img src="./assets/img/chevLeft.png" alt=""></div>
+				<div class="sliders-item">
+					<div id="click"></div>
+					<div id="elem"></div>
+					<div id="click1"></div>
+					<div id="elem1"></div>
+					<div class="css__adaptive">
+						<div><img src="./assets/img/iPhone Vertical.png" alt="iPhone" class="iPhone1"></div>
+						<div><img src="./assets/img/iPhone Horizontal.png" alt="iPhone2" id="iPhone2" class="iPhone2 ">
+						</div>
+					</div>
+				</div>
+				<div class="sliders-item css__adaptive">
+					<img class="sliders2" src="./assets/img/Slide-2.png" alt="#">
+				</div>
+			</div>
+			<!-- <div id="left-button"><img src="./assets/img/chevLeft.png" alt=""></div> -->
+			<div id="right-button"><img src="./assets/img/chev.png" alt=""></div>
+		</div>
 	</section>
-	<div class="borderMiddle" id="services">
+	<div class="wrapper">
+		<div class="borderMiddle" id="services"></div>
 	</div>
 	<section class="servicesAdvantage">
-		<div>
+		<div class="wrapper">
 			<div class="services">
 				<h2>Our Services</h2>
 				<div>
 					<p class="pTop">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
 						non commodo luctus, nisi erat porttitor ligula, eget lacinina odio sem nec elit. Fusce
 						dapibus, tellus ac cursus commodo, tortor mauris condimentum nidh</p>
-					</p>
 				</div>
 			</div>
+		</div>
+		<div class="wrapper">
 			<div class="advantage">
-				<div>
-					<div class="itemAdvantage itemLeft"><img src="./assets/img/Pen.png" alt="">
-						<div>
+				<div class="central i1">
+					<div class="itemAdvantage"><img src="./assets/img/Pen.png" alt="">
+						<div class="i1p">
 							<h3>Custom Design</h3>
-							<p class="pTop">Curabitur vestibulim eget mauris quis
+							<p>Curabitur vestibulim eget mauris quis
 								laoreet. Phasellus in quam laoreet, viverra
 								lacus ut, ultrices velit.</p>
 						</div>
 					</div>
-					<div class="itemAdvantage itemLeft"><img src="./assets/img/Phone.png" alt="">
-						<div>
-							<h3>Responsive Layout</h3>
-							<p class="pTop1">Sed porttitor placeret rhoncus. ln at nunc
-								tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
-							</p>
-						</div>
-					</div>
 				</div>
-				<div>
-					<div class="itemAdvantage itemMiddle"><img src="./assets/img/Bulb.png" alt="">
+				<div class="central i2">
+					<div class="itemAdvantage"><img src="./assets/img/Bulb.png" alt="">
 						<div>
 							<h3>lnovative ldeas</h3>
-							<p class="pTop2">Quisque luctus, quam eget molestie com-
+							<p>Quisque luctus, quam eget molestie com-
 								modo, lacus purus cursus purus, nec
 								rutrum tellus dolor id lorem.</p>
 						</div>
 					</div>
-					<div class="itemAdvantage itemMiddle"><img src="./assets/img/Bubble.png" alt="">
-						<div>
-							<h3>24 / 7 Support</h3>
-							<p class="pTop3">Vivamus vel quam lacinia, tincidunt dui
-								non, vehicula nisi. Nulla a sem erat. Pellen-
-								tesque egestas venenatis lorem.</p>
-						</div>
-					</div>
 				</div>
-				<div>
-					<div class="itemAdvantage itemRight"><img src="./assets/img/Heart.png" alt="">
+				<div class="central i3">
+					<div class="itemAdvantage"><img src="./assets/img/Heart.png" alt="">
 						<div>
 							<h3>Love ls The Answer</h3>
-							<p class="pTop4">Nulla sed nunc et tortor luctus faucibus.
+							<p>Nulla sed nunc et tortor luctus faucibus.
 								Morbi at aliquet turpis, et consequat felis.
 								Quisque condimentum.</p>
 							</p>
 						</div>
 					</div>
+				</div>
+				<div class="central i4">
+					<div class="itemAdvantage"><img src="./assets/img/Phone.png" alt="">
+						<div>
+							<h3>Responsive Layout</h3>
+							<p>Sed porttitor placeret rhoncus. ln at nunc
+								tellus. Maecenas blandit nunc ligula. Prae-sent elit leo.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="central i5">
+					<div class="itemAdvantage"><img src="./assets/img/Bubble.png" alt="">
+						<div>
+							<h3>24 / 7 Support</h3>
+							<p>Vivamus vel quam lacinia, tincidunt dui
+								non, vehicula nisi. Nulla a sem erat. Pellen-
+								tesque egestas venenatis lorem.</p>
+						</div>
+					</div>
+				</div>
+				<div class="central i6">
 					<div class="itemAdvantage itemRight"><img src="./assets/img/Star.png" alt="">
 						<div>
 							<h3>Feel Like A Star</h3>
-							<p class="pTop5">Quisque hendrerit purus dapidus, ornare
+							<p>Quisque hendrerit purus dapidus, ornare
 								nibh vitae, viverra nibh. Fusce vitae
 								aliquam tellus.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
-	<div class="borderBottom"></div>
+	<div class="wrapper">
+		<div class="borderBottom"></div>
+	</div>
 	<section id="wrap">
-		<div id="portfolio">
-			<div class="headerPortfolio">
-				<div class="headerPortfolioText">
-					<h1>Portfolio</h1>
-					<p>
-						Duis mollis, est non commodo luctus, nisi erat <span>porttitor ligula, eget lacinia odio</span>
-						<span>sem nec elit.</span>
-					</p>
+		<div class="wrapper">
+			<div id="portfolio">
+				<div class="headerPortfolio">
+					<div class="headerPortfolioText">
+						<h1>Portfolio</h1>
+						<p>
+							Duis mollis, est non commodo luctus, nisi erat porttitor
+							ligula, eget lacinia
+							odio sem nec elit.
+						</p>
+					</div>
+					<nav id="navheader" class="navheader">
+						<a id="navItemWork" class="item1 active2">All</a>
+						<a id="navItemWork2" class="item2">Web Design</a>
+						<a id="navItemWork3" class="item3">Graphic Design</a>
+						<a id="navItemWork4" class="item4">Artwork</a>
+					</nav>
 				</div>
-				<nav id="navheader" class="navheader">
-					<a id="navItemWork" class="item1 active2">All</a>
-					<a id="navItemWork2" class="item2">Web Design</a>
-					<a id="navItemWork3" class="item3">Graphic Design</a>
-					<a id="navItemWork4" class="item4">Artwork</a>
-				</nav>
 			</div>
 		</div>
 	</section>
 	<section class="work" id="wrap">
-		<div id="layout4" class="layout-4-column">
-			<img src="./assets/img-singolo2/Project.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image3.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image6.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image9.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image4.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image7.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image10.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image2.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image5.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image8.png" alt="#" id="portfolioImge" class=" itemWork">
-			<img src="./assets/img-singolo2/Image11.png" alt="#" id="portfolioImge" class=" itemWork">
+		<div class="wrapper wrapper__work">
+			<div id="layout4" class="layout-4-column">
+				<img src="./assets/img-singolo2/Project.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image3.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image6.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image9.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image4.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image7.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image10.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image2.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image5.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image8.png" alt="#" id="portfolioImge" class=" itemWork">
+				<img src="./assets/img-singolo2/Image11.png" alt="#" id="portfolioImge" class=" itemWork">
+			</div>
 		</div>
 	</section>
-	<div class="itemBottom"></div>
 	<div class="midBorder"></div>
-	<section class="we" id="wrap">
+	<section class="we wrapper" id="wrap">
 		<div id="about">
 			<header class="aboutUs">
 				<h2>About Us</h2>
-				<p class="p1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. <span>Duis mollis, non
-						commodo luctus, nisi erat porttitor</span></p>
-				<p class="p2"> ligula, eget lacinia odio sem nec elit. <span>Fusce dapibus, tellus ac cursus
-						commodo,</span>
-					<span>tortor mauris condimentum nibh.</span> </p>
+				<p class="p1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+					commodo luctus, nisi erat porttitor
+					ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+					commodo, tortor mauris condimentum nibh. </p>
 			</header>
 			<article class="vc">
 				<div class="itemLeft1">
@@ -175,10 +196,10 @@
 					<h2>Adam Jensen</h2>
 					<p class="pTop">Quisque luctus, quam eget molestie commodo, lacus purus
 						cursus purus, nec rutrum tellus dolor id lorem.</p>
-					<img src="./assets/img-singolo2/Facebook.png" alt="" class="social">
-					<img src="./assets/img-singolo2/Google.png" alt="" class="social">
-					<img src="./assets/img-singolo2/Twitter.png" alt="" class="social">
-					<img src="./assets/img-singolo2/LinkedIn.png" alt="" class="social">
+						<img src="./assets/img-singolo2/Facebook.png" alt="" class="social">
+						<img src="./assets/img-singolo2/Google.png" alt="" class="social">
+						<img src="./assets/img-singolo2/Twitter.png" alt="" class="social">
+						<img src="./assets/img-singolo2/LinkedIn.png" alt="" class="social">
 				</div>
 				<div class="itemMid2">
 					<img src="./assets/img-singolo2/Desmond.png" alt="" class="photo">
@@ -208,16 +229,13 @@
 		</div>
 	</section>
 	<div class="bottomBorder"></div>
-	<section class="formFooter" id="wrap">
+	<section class="formFooter wrapper" id="wrap">
 		<div id="contact">
 			<div footerHeader>
 				<h2>Get a Quote</h2>
 				<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.Duis mollis, non commodo luctus,
-					nisi
-					erat porttitor</p>
-				<p class="text"> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
-					mauris
-					condimentum nibh.
+					nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
+					tellus ac cursus commodo, tortormauris condimentum nibh.
 				</p>
 			</div>
 			<section class="form" id="wrap">
@@ -258,8 +276,7 @@
 					<div class="text">
 						<h3>Contact Information</h3>
 						<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-ra nibh. Fusce vitae aliquam
-							tellus.
-							Proin sit amet volutpat libero. Nulla sed nunc et
+							tellus. Proin sit amet volutpat libero. Nulla sed nunc et
 							tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
 						</p>
 					</div>
@@ -288,7 +305,7 @@
 		</div>
 	</section>
 	<div class="endFooter"></div>
-	<footer class="footer">
+	<footer class="footer wrapper">
 		<div class="text">
 			<p>&#169;Copyright 2013</p>
 		</div>
