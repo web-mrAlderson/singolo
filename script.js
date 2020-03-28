@@ -1,4 +1,5 @@
 let NAV 			= document.getElementById('nav'),
+	NAV2 			= document.getElementById('nav2'),
 	SLIDES 			= document.getElementsByClassName('sliders-item'),
 	navheader 		= document.getElementById('navheader'),
 	layout4 		= document.getElementById('layout4'),
@@ -17,6 +18,10 @@ let NAV 			= document.getElementById('nav'),
 	elem 			= document.getElementById("elem"),
 	elem1 			= document.getElementById("elem1"),
 	elems 			= Array.from(layout4.getElementsByTagName('*')),
+	nav375			= document.getElementById("wrapper__nav375px"),
+	burger 			= document.getElementById("burger"),
+	burger2			= document.getElementById("burger2"),
+	aNav			= 
 	slideIndex 		= 1;
 
 	document.addEventListener('scroll', onScroll);
@@ -211,3 +216,22 @@ navItemWork4.onclick = function () {
 	removeChildren(layout4);
 	shuffle(elems);
 }
+
+function navigation375() {
+	document.getElementById("wrapper__nav375px").style.display = "block";
+}
+function offNav375() {
+	document.getElementById("wrapper__nav375px").style.display = "none";
+}
+
+burger2.onclick = function () {
+	offNav375();
+}
+burger.onclick = function () {
+	navigation375();
+}
+NAV2.addEventListener('click', (event) => {
+	NAV2.querySelectorAll('a').forEach(el => el.classList.remove('active1'));
+	event.target.classList.add('active1');
+	offNav375();
+});

@@ -122,6 +122,73 @@ body {
 .nav .active {
 	color: red;
 }
+.nav375px {
+	height: 100%;
+	background: #2D303A;
+	z-index: 2;
+	position: absolute;
+	position: fixed;
+	min-width: 281px;
+}
+
+.burger {
+	display: flex;
+	padding: 10px 0px 0px 20px;
+}
+.wrapper__nav375px {
+	display: none;
+}
+.blur{
+	background: rgba(45, 48, 58, 0.479);
+	position: fixed;
+	z-index: 1;
+	min-height: 100%;
+	min-width: 100%;
+	right: 0px;
+}
+
+.burger img {
+	width: 20px;
+	height: 25px;
+	margin-top: 14px;
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.logo1 {
+	font-family: Lato-Black;
+	display: flex;
+	color: white;
+	margin: 0px;
+	text-transform: uppercase;
+	font-size: 12.4902px;
+	padding-left: 29px;
+	padding-bottom: 2px;
+	font-style: normal;
+	font-weight: bold;
+}
+.logo1 span{
+	color: red;
+}
+.nav375px nav {
+	margin: 139px 0px 0px 35px;
+}
+.nav375px li {
+	font-family: Lato-Regular;
+	font-size: 23px;
+	color: white;
+	padding-top: 29px;
+	list-style-type: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.nav375px .active1 {
+	color: red;
+}
+.nav375px li a {
+	color: #ffffff;
+	text-decoration: none;
+}
 
 .borderTop {
 	border-bottom: 6px solid #323746;
@@ -243,7 +310,8 @@ body {
 	height: 494px;
 	background: #F2F2F2;
 }
-.wrapper__Advantage{
+
+.wrapper__Advantage {
 	height: 494px;
 	background: #F2F2F2;
 }
@@ -931,6 +999,7 @@ textarea[type="text"]::placeholder {
 
 @media (max-width: 1000px) {
 	.servicesAdvantage {
+		margin: 0px;
 		max-width: 768px;
 	}
 
@@ -1022,6 +1091,7 @@ textarea[type="text"]::placeholder {
 	}
 
 	.servicesAdvantage {
+		margin: 0px;
 		height: 669px;
 	}
 
@@ -1085,7 +1155,9 @@ textarea[type="text"]::placeholder {
 		height: 184px;
 		margin: 0px 0px 20px 0px;
 	}
+
 	.midBorder {
+		margin: 0px;
 		max-width: 762px;
 	}
 
@@ -1172,12 +1244,16 @@ textarea[type="text"]::placeholder {
 	.we {
 		min-height: 663px;
 	}
+
 	.formFooter {
 		max-width: 768px;
 	}
+
 	.endFooter {
+		margin: 0px;
 		max-width: 762px;
 	}
+
 	.footer {
 		max-width: 768px;
 	}
@@ -1227,9 +1303,11 @@ textarea[type="text"]::placeholder {
 	.textContact {
 		padding-top: 0px;
 	}
+
 	.submit {
 		padding: 26px 0px 0px 4px;
 	}
+
 	.form-submit {
 		border-radius: 5px;
 		text-transform: uppercase;
@@ -1263,6 +1341,76 @@ textarea[type="text"]::placeholder {
 }
 
 @media (max-width: 720px) {
+
+	/* .nav375px {
+		height: 100%;
+		background: #2D303A;
+		z-index: 2;
+		position: absolute;
+		position: fixed;
+		min-width: 281px;
+	}
+
+	.burger {
+		display: flex;
+		padding: 10px 0px 0px 20px;
+	}
+	.wrapper__nav375px {
+		display: none;
+	}
+	.blur{
+		background: rgba(45, 48, 58, 0.479);
+		position: fixed;
+		z-index: 2;
+		min-height: 100%;
+		min-width: 121px;
+		right: 0px;
+	}
+
+	.burger img {
+		width: 20px;
+		height: 25px;
+		margin-top: 14px;
+		margin-left: 6px;
+		cursor: pointer;
+	}
+
+	.logo1 {
+		font-family: Lato-Black;
+		display: flex;
+		color: white;
+		margin: 0px;
+		text-transform: uppercase;
+		font-size: 12.4902px;
+		padding-left: 29px;
+		padding-bottom: 2px;
+		font-style: normal;
+		font-weight: bold;
+	}
+	.logo1 span{
+		color: red;
+	}
+	.nav375px nav {
+		margin: 139px 0px 0px 35px;
+	}
+	.nav375px li {
+		font-family: Lato-Regular;
+		font-size: 23px;
+		color: white;
+		padding-top: 29px;
+		list-style-type: none;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	.nav375px .active1 {
+		color: red;
+	}
+	.nav375px li a {
+		color: #ffffff;
+		text-decoration: none;
+	} */
+
+
 	.header__wrapper {
 		max-width: 375px;
 		justify-content: flex-start;
@@ -1588,33 +1736,44 @@ textarea[type="text"]::placeholder {
 	.form .contact {
 		width: 375px;
 	}
+
 	.form .contact .text h3 {
 		padding: 31px 0px 0px 3px;
 	}
+
 	.form .contact .text p {
 		padding: 0px 48px 0px 3px;
 	}
+
 	.textContact {
 		padding: 0px 0px 0px 0px;
 	}
+
 	.contact .textContact .conteiner {
 		padding: 9px 0 0 6px;
 	}
+
 	.contact .textContact .phonemin1 {
 		padding: 6px 0 0 5px;
 	}
+
 	.contact .textContact .mailmin1 {
 		padding: 3.3px 0 0 3px;
 	}
+
 	.endFooter {
+		margin: 0px;
 		display: none;
 	}
+
 	.footer .text p {
 		display: none;
 	}
+
 	.footer {
 		max-width: 375px;
 	}
+
 	.footer .social {
 		padding: 22px 107px 0px 0px;
 	}
